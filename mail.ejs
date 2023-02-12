@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail</title>
+    <style>
+        table,
+        th,td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h5>
+        Hello,
+    </h5>
+    <h5>One query has been recieved from CrozTek website,Find the details below</h5>
+    <table style="width: 100%;">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Message</th>
+            </tr>
+            <tr>
+            <td> <%= query.fullname %> </td>
+            <td> <%= query.email %> </td>
+            <td> <%= query.number %> </td>
+            <td> <%= query.message %> </td>
+            </tr>
+    </table>
+
+    <h5>
+        Full Name : <%= query.fullname %>
+    </h5>
+    
+    <h5>
+        Email : <%= query.email %>
+    </h5>
+    
+    <h5>
+        Phone Number : <%= query.number %>
+    </h5>
+    <h5>
+        Query : <%= query.message %>
+    </h5>
+
+
+
+    <h5>
+        Thanks,
+        <br/>
+        CrozTek
+    </h5>
+</body>
+</html>
